@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(29, 29, 29);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor{
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+.triangulo{
+    border-top: 21.71px solid transparent;
+    border-bottom: 21.71px solid transparent;
+    border-left: 37.721px solid #23b5b5;
+}
+
+.main{
+    width: 80%;
+    margin: 30px auto;
+    
+}
+p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(44, 44, 44);
+    border-radius: 100px;
+    border: 3px solid rgb(29, 29, 29);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(58, 58, 58);
+}

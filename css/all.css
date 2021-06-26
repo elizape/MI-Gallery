@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+        scroll-behavior:smooth;
+       /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+       para probar la diferencia con y sin scroll suavizado*/
+    }
+
+body {
+  transition: 0.3s;
+  background-color: rgb(29, 29, 29);
+  font-family: Open Sans, fa5-proxima-nova;
+}
+
+/*headerDos*/
+
+.headerDos header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  padding: 0px 15px;
+}
+
+.headerDos header nav a {
+  height: 65px;
+  font-size: 1rem;
+}
+
+/*Header*/
+
+header {
+  transition: 0.3s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0px 25px;
+  background-color: #292929;
+  box-shadow: 0px 0px 3px 0px black;
+  z-index: 9000;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  transition: 0.4s;
+  height: 85px;
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  margin-right: 15px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  /* background-color: rgb(107, 107, 107);
+  border-radius: 5px;
+  color: #292929; */
+  border-bottom: 2px solid white;
+}
+
+header .logoDos {
+  display: none;
+}
+
+header .logoUno {
+  transition: 0.3s;
+  display: block;
+  width: 150px;
+}
+
+/*Scroll Bar*/
+
+body::-webkit-scrollbar {
+  width: 13px;
+  background-color: rgb(29, 29, 29);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(51, 51, 51, 0.8);
+  border-radius: 7px;
+  border: 3px solid rgb(29, 29, 29);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(63, 63, 63);
+}
+
+/*scroll bar Light*/
+
+.light::-webkit-scrollbar {
+  background-color: rgb(243, 243, 243);
+}
+
+.light::-webkit-scrollbar-thumb {
+  background: rgb(194, 193, 193, 0.8);
+  border: solid rgba(243, 243, 243);
+}
+
+.light::-webkit-scrollbar-thumb:hover {
+  background: rgb(153, 153, 153);
+}
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+  box-shadow: 0px 0px 3px 0px rgb(44, 44, 44);
+  color: white;
+}
+
+.cUno {
+  display: inline-block;
+  margin: 30px 20px;
+}
+
+/*Footer modo light*/
+
+.light footer {
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0px 0px 1px 0px rgb(44, 44, 44);
+  color: black;
+  font-weight: 600;
+}
+
+/*Switch Modo Oscuro*/
+
+
+.switch {
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  position: relative;
+  outline: none;
+  /*Para que parezca un enlace*/
+  cursor: pointer;
+}
+
+.switch span {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  background: none;
+  color: rgb(63, 63, 63);
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: white;
+  top: 0;
+  right: 0;
+  left: unset;
+  border-radius: 100px;
+  transition: 0.8s;
+  box-shadow: 0px 0px 2.5px 1px black;
+}
+
+/* .switch.active, se traduce como class"switch active"*/
+
+.switch.active {
+  background: rgb(212, 212, 212);
+  color: whitesmoke;
+
+}
+
+.switch.active::after {
+  right: unset;
+  left: 0;
+  background: rgb(243, 243, 243);
+  color: rgb(243, 243, 243);
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+/*Modo Claro*/
+
+.light,
+.light header {
+  background-color: rgb(243, 243, 243);
+  color: black;
+}
+
+.light header {
+  box-shadow: 0px 0px 1px 0px rgb(44, 44, 44);
+}
+
+.light nav a,
+.light.headerDos nav a,
+.headerDos.light nav a {
+  color: black;
+  transition: 0.3s;
+
+}
+
+.light nav a:hover,
+.light.headerDos nav a:hover,
+.headerDos.light nav a:hover {
+  border-bottom: 2px solid black;
+}
+
+.light .logoUno {
+  display: none;
+}
+
+.light .logoDos,
+.light.headerDos .logoDos,
+.headerDos.light .logoDos {
+  display: block;
+  width: 150px;
+}
+
+.headerDos.light,
+.light.headerDos a {
+  color: black;
+  transition-property: color;
+  transition-duration: .6s;
+}

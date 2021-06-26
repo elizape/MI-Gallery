@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/changelog.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/pageloader.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/solid.js" integrity="sha384-9xA4r2/2cctd+IZZKLvI1hmeHZ5Yp8xXkS6J8inDtdyZCqhEHVcTGmSUCbNED5Ae" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/regular.js" integrity="sha384-bPKzNk+f6IzEi89cU+jf3bwWzJQqo+U1/QYUijuD7XD9WO3MSrrAVVEglIOCo6VD" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/fontawesome.js" integrity="sha384-hD97VKS04Rv8VYShf782apVZOVP6bVH/ubzrWXIIbKOwnD6gsDIcB29K03FL1A9J" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/prevloader.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <title>Mi Gallery</title>
+</head>
+<body class="remove">
+
+    <div class="pageLoader" id="pageLoader">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <!-- Así se hacer un header, prestá antención-->
+        <div class="wrapper">
+            <div class="logo">
+                <a href=""><img class="logoUno" src="images/mi.png" alt=""></a>
+                <a href=""><img class="logoDos" src="images/mi2.png" alt=""></a>
+            </div>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="changelog.html">Change Log</a>
+                <button class="switch" id="switch">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i></span>
+                </button>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="main">
+
+        <div class="contenedor">
+
+            <div class="titulo">
+                <p>Change Log</p>
+            </div>
+
+            <div class="cajaP">
+
+                <div class="contenido">
+                    <div class="subtitulo">
+                        <p>Alpha 3.0v</p>
+                    </div>
+                    <div class="changes">
+                        <p>Todos los errores corregidos. Por ejemplo al hacer scroll el cambio de la barra de navegación, etcétera.</p>
+                        <p>Fue añadido soporte para distintos dispositivos móviles.</p>
+                        <p>Se adaptaron las imágenes con css grid, para una mejor interfaz.</p>
+                        <p>Para los dispositivos móviles fue añadida una barra horizontal en la zona inferior de la pantalla.</p>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <div class="subtitulo">
+                        <p>Alpha 2.2v</p>
+                    </div>
+                    <div class="changes">
+                        <p>Arreglado bug de transición del header al hacer scroll.</p>
+                        <p>Se añadió una nueva animación de carga, con una pantalla de carga para una 
+                           mejor transición.</p>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <div class="subtitulo">
+                        <p>Alpha 2.1v</p>
+                    </div>
+                    <div class="changes">
+                        <p>Añadido un header "Dinámico". </p>
+                        <p>Persiste el bug del hover en la vista previa de imágenes.</p>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <div class="subtitulo">
+                        <p>Alpha 2.0v</p>
+                    </div>
+                    <div class="changes">
+                        <p>Nuevo modo "Light" (con un nuevo diseño) y "Oscuro".</p>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <div class="subtitulo">
+                        <p>Alpha 1.7v</p>
+                    </div>
+                    <div class="changes">
+                        <p> En esta versión, se añadió el apartado "Change Log".</p>
+                    </div>
+                </div>
+
+                <div class="contenido">
+                    <div class="subtitulo">
+                        <p>Alpha 1.5v</p>
+                    </div>
+                    <div class="changes">
+                        <p> En esta versión, cambiamos el header antiguo, junto con una nueva 
+                            barra de scroll.</p>
+                    </div>
+                </div>
+                <div class="contenido">
+                    <div class="subtitulo">
+                        <p>Alpha 1.0v</p>
+                    </div>
+                    <div class="changes">
+                        <p> En esta versión añadimos, una galería (fotos separadas entre sí en forma de ventana, 
+                            con un zoom al seleccionarla), con carrucel de fotos, con ciertos efectos 
+                            de transición. Y sin olvidar el header con su respectivo logo.</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/programacion.js"></script>
+</body>
+</html>
