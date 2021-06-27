@@ -5,10 +5,10 @@
 }
 
 body {
-        scroll-behavior:smooth;
-       /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+  scroll-behavior: smooth;
+  /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
        para probar la diferencia con y sin scroll suavizado*/
-    }
+}
 
 body {
   transition: 0.3s;
@@ -26,7 +26,7 @@ body {
   padding: 0px 15px;
 }
 
-.headerDos header nav a {
+.headerDos header nav a.homeC {
   height: 65px;
   font-size: 1rem;
 }
@@ -57,12 +57,11 @@ header nav {
   align-items: center;
 }
 
-header nav a {
+header nav a.homeC {
   transition: 0.4s;
   height: 85px;
   display: flex;
   align-items: center;
-
   text-decoration: none;
   color: white;
   padding: 5px;
@@ -72,7 +71,7 @@ header nav a {
   font-weight: 500;
 }
 
-header nav a:hover {
+header nav a.homeC:hover {
   /* background-color: rgb(107, 107, 107);
   border-radius: 5px;
   color: #292929; */
@@ -87,6 +86,58 @@ header .logoUno {
   transition: 0.3s;
   display: block;
   width: 150px;
+}
+
+span.homeI,
+span.logI {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  a.homeD span.homeI,
+  a.homeD span.logI {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    padding: 12.5px;
+    transition: 0.35s;
+  }
+
+  .wrapper nav a.homeC {
+    display: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  a.homeD span.homeI:hover,
+  a.homeD span.logI:hover {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+
+  .light a.homeD span.homeI,
+  .light a.homeD span.logI {
+    display: flex;
+    align-items: center;
+    color: #434343;
+    font-size: 25px;
+    padding: 12.5px;
+    transition: 0.35s;
+  }
+
+  .light a.homeD span.homeI:hover,
+  .light a.homeD span.logI:hover {
+    opacity: 0.8;
+  }
+
+  /*Ocultar barra de navegacion en dispositivos 
+  móviles*/
+
+  .removeBar header .wrapper nav {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 /*Scroll Bar*/
@@ -125,8 +176,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 footer {
   width: 100%;
-  background-color: rgb(44, 44, 44);
-  box-shadow: 0px 0px 3px 0px rgb(44, 44, 44);
+  background-color: #292929;
+  box-shadow: 0px 0px 3px 0px black;
   color: white;
 }
 
@@ -177,7 +228,7 @@ footer {
   right: 0;
   left: unset;
   border-radius: 100px;
-  transition: 0.8s;
+
   box-shadow: 0px 0px 2.5px 1px black;
 }
 
@@ -209,17 +260,17 @@ footer {
   box-shadow: 0px 0px 1px 0px rgb(44, 44, 44);
 }
 
-.light nav a,
-.light.headerDos nav a,
-.headerDos.light nav a {
+.light nav a.homeC,
+.light.headerDos nav a.homeC,
+.headerDos.light nav a.homeC {
   color: black;
   transition: 0.3s;
 
 }
 
-.light nav a:hover,
-.light.headerDos nav a:hover,
-.headerDos.light nav a:hover {
+.light nav a.homeC:hover,
+.light.headerDos nav a.homeC:hover,
+.headerDos.light nav a.homeC:hover {
   border-bottom: 2px solid black;
 }
 

@@ -18,23 +18,23 @@
 /*container responsive*/
 
 @media screen and (max-width: 600px) {
+
   header .wrapper nav {
+    transition: all 0.3s ease;
     position: fixed;
-    display: flex;
     justify-content: space-around;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #292929;
-    width: 85%;
+    width: 70%;
     margin: 15px auto;
     border-radius: 35px;
-    padding: 0px 5px;
     box-shadow: 0px 0px 5px 0px black;
   }
 
   header .wrapper nav a {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     height: 50px;
     margin: 0px;
     padding: 0px;
@@ -52,8 +52,9 @@
   .light header .wrapper nav {
     background-color: white;
   }
+
   .main .gallery-container {
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
   }
 }
 
@@ -85,7 +86,7 @@
     padding: 0px 15px;
   }
 
-  header nav a {
+  header nav a.homeC {
     height: 65px;
   }
 }
